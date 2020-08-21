@@ -1,11 +1,42 @@
 * {
     margin: 0;
     padding: 0;
-
+    border: 0;
 }
 
-div#calculadora {
-    height: 640px;
+ul, ol, li {
+    list-style: none;
+}
+
+body {
     width: 360px;
-    background-color: #666699;
+    height: 640px;
+}
+
+.teclado {
+    text-align: justify;
+}
+
+.teclado::after {
+    display: inline-block;
+    content: '';
+    width: 100%;
+}
+
+.teclado-item {
+    display: inline-block;
+    width: 32%;
+    height: 50px;
+}
+
+.teclado-item_0 {
+    width: 66%;
+    background-color: gold;
+}
+
+.teclado-item_1 {
+    background-color: green;
+}
+.teclado-item_3 {
+    background-color: blueviolet;
 }
