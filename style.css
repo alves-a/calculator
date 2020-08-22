@@ -8,35 +8,28 @@ ul, ol, li {
     list-style: none;
 }
 
-body {
-    width: 360px;
-    height: 640px;
-}
-
 .teclado {
-    text-align: justify;
-}
-
-.teclado::after {
-    display: inline-block;
-    content: '';
-    width: 100%;
+    background-color: brown;
+    display: flex;
+    flex-wrap: wrap;
+    width: 330px;
+    height: 410px;
 }
 
 .teclado-item {
-    display: inline-block;
-    width: 32%;
-    height: 50px;
+    background-color: burlywood;
+    color: black;
+    width: 80px;
+    height: 80px;
+    border: solid 1px rebeccapurple;
+    text-align: center;
+	font-size: 1.5em;
 }
 
 .teclado-item_0 {
-    width: 66%;
-    background-color: gold;
+    width: 160px;
 }
 
-.teclado-item_1 {
-    background-color: green;
-}
-.teclado-item_3 {
-    background-color: blueviolet;
+.teclado-item_igual {
+    height: 160px;
 }
