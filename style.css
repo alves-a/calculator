@@ -27,9 +27,11 @@ ul, ol, li {
 }
 
 .teclado-item_0 {
-    width: 160px;
+    width: 162px;
 }
 
 .teclado-item_igual {
-    height: 160px;
+    position: relative;
+    height: 162px;
+    top: -82px;
 }
