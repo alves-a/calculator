@@ -8,12 +8,49 @@ ul, ol, li {
     list-style: none;
 }
 
+body {
+    font-family: monospace;
+}
+
+p,
+.tela,
+.teclado-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tela {
+    background-color: gray;
+    width: 326px;
+    height: 160px;
+}
+
+.tela-display {
+    background-color: green;
+    border-radius: 5%;
+    width: 98%;
+    height: 98%;
+}
+
+
+p {
+    height: 80px;
+}
+
+.tela-texto {
+
+}
+
 .teclado {
-    background-color: brown;
     display: flex;
     flex-wrap: wrap;
-    width: 330px;
-    height: 410px;
+    width: 328px;
+}
+
+.tela,
+.teclado-item {
+    border: solid 1px rebeccapurple;
 }
 
 .teclado-item {
@@ -21,9 +58,13 @@ ul, ol, li {
     color: black;
     width: 80px;
     height: 80px;
-    border: solid 1px rebeccapurple;
-    text-align: center;
     font-size: 1.5em;
+}
+
+.teclado-item:hover {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 1, 1);
+    cursor: pointer;
 }
 
 .teclado-item_0 {
