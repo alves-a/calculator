@@ -10,6 +10,8 @@ ul, ol, li {
 
 body {
     font-family: monospace;
+    display: table;
+    margin: 0 auto;
 }
 
 p,
