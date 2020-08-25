@@ -1,39 +1,29 @@
-var conta = ""
+var calculo = ""
+
 function addNumber(num) {
-    conta = conta + num
-    document.querySelector("p#tela-textoCima").innerHTML = conta;
+    calculo = calculo + num
+    document.querySelector("p#tela-textoCima").innerHTML = calculo;
 }
 
 function igual() {
-    var expressao = conta
-    if (expressao) {
-        document.querySelector("p#tela-textoBaixo").innerHTML = eval(expressao);
+    var resultado = calculo
+    if (resultado) {
+        document.querySelector("p#tela-textoBaixo").innerHTML = eval(resultado);
     }
 }
 
 function clean() {
-    conta = ""
+    calculo = ""
     document.querySelector("p#tela-textoCima").innerHTML = "";
     document.querySelector("p#tela-textoBaixo").innerHTML = "";
 }
 
 function back() {
+    calculo = calculo.substring(0, calculo.length-1)
+    document.querySelector("p#tela-textoCima").innerHTML = calculo;
 }
 
-/*
-var adicao = (a, b) => a + b
-var subtracao = (a,b) => a - b
-var multiplicacao = (a, b) => a * b
-var divisao = (a,b) => a / b
-var raiz = (a) => Math.sqrt(a)
-
-var numArray = [];
-function addNumber(num){
-    numArray.push(num);
-    var singleNumber = Number(numArray.join(''));
-    document.querySelector("p#tela-textoBaixo").innerHTML = singleNumber;
+function raiz() {
+    var raiz = eval(calculo)
+    document.querySelector("p#tela-textoBaixo").innerHTML = Math.sqrt(raiz);
 }
-
-const a = singleNumberA
-const b = singleNumberB
-*/
