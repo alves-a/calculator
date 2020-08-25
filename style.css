@@ -53,6 +53,7 @@ p, .tela, .teclado-item {
 }
 
 p {
+    font-size: 30pt;
     height: 80px;
 }
 

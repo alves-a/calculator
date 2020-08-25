@@ -8,6 +8,7 @@ function addNumber(num) {
 function igual() {
     var resultado = calculo
     if (resultado) {
+        document.querySelector("p#tela-textoCima").innerHTML += "="
         document.querySelector("p#tela-textoBaixo").innerHTML = eval(resultado);
     }
 }
@@ -25,5 +26,6 @@ function back() {
 
 function raiz() {
     var raiz = eval(calculo)
+    document.querySelector("p#tela-textoCima").innerHTML = "&radic;" + calculo
     document.querySelector("p#tela-textoBaixo").innerHTML = Math.sqrt(raiz);
 }
