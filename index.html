@@ -10,37 +10,47 @@
 </head>
 
 <body>
-
-    <div class="tela">
-        <div class="tela-display">
-            <p class="tela-texto">
-                testeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
-            </p>
-            <p class="tela-texto" id="tela-textoBaixo">
-                testeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
-            </p>
+    
+    <div class="calculadora">
+        <div class="tela">
+            <div class="tela-display">
+                <p class="tela-texto" id="tela-textoCima">
+                    testeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
+                </p>
+                <p class="tela-texto" id="tela-textoBaixo">
+                    testeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
+                </p>
+            </div>
         </div>
+        <ul class="teclado">
+            <li class="teclado-item teclado-item_radic">&radic;</li>
+            <li class="teclado-item teclado-item_divisao" onclick="addNumber(`/`)">/</li>
+            <li class="teclado-item teclado-item_multiplicacao" onclick="addNumber(`*`)">*</li>
+            <li class="teclado-item teclado-item_c" onclick="clean()">C</li>
+
+            <li class="teclado-item teclado-item_7" onclick="addNumber(7)">7</li>
+            <li class="teclado-item teclado-item_8" onclick="addNumber(8)">8</li>
+            <li class="teclado-item teclado-item_9" onclick="addNumber(9)">9</li>
+
+            <li class="teclado-item teclado-item_mais" onclick="addNumber(`+`)">+</li>
+
+            <li class="teclado-item teclado-item_4" onclick="addNumber(4)">4</li>
+            <li class="teclado-item teclado-item_5" onclick="addNumber(5)">5</li>
+            <li class="teclado-item teclado-item_6" onclick="addNumber(6)">6</li>
+
+            <li class="teclado-item teclado-item_menos" onclick="addNumber(`-`)">-</li>
+
+            <li class="teclado-item teclado-item_1" onclick="addNumber(1)">1</li>
+            <li class="teclado-item teclado-item_2" onclick="addNumber(2)">2</li>
+            <li class="teclado-item teclado-item_3" onclick="addNumber(3)">3</li>
+
+            <li class="teclado-item teclado-item_igual" onclick="igual()">=</li>
+
+            <li class="teclado-item teclado-item_back" onclick="back()">&#8666;</li>
+            <li class="teclado-item teclado-item_0" onclick="addNumber(0)">0</li>
+            <li class="teclado-item teclado-item_ponto" onclick="addNumber(`.`)">.</li>
+        </ul>
     </div>
-    <ul class="teclado">
-        <li class="teclado-item teclado-item_radic">&radic;</li>
-        <li class="teclado-item teclado-item_divisao">/</li>
-        <li class="teclado-item teclado-item_multiplicacao">*</li>
-        <li class="teclado-item teclado-item_c">C</li>
-        <li class="teclado-item teclado-item_7" onclick="addNumber(7)">7</li>
-        <li class="teclado-item teclado-item_8" onclick="addNumber(8)">8</li>
-        <li class="teclado-item teclado-item_9" onclick="addNumber(9)">9</li>
-        <li class="teclado-item teclado-item_mais">+</li>
-        <li class="teclado-item teclado-item_4" onclick="addNumber(4)">4</li>
-        <li class="teclado-item teclado-item_5" onclick="addNumber(5)">5</li>
-        <li class="teclado-item teclado-item_6" onclick="addNumber(6)">6</li>
-        <li class="teclado-item teclado-item_menos">-</li>
-        <li class="teclado-item teclado-item_1" onclick="addNumber(1)">1</li>
-        <li class="teclado-item teclado-item_2" onclick="addNumber(2)">2</li>
-        <li class="teclado-item teclado-item_3" onclick="addNumber(3)">3</li>
-        <li class="teclado-item teclado-item_0" onclick="addNumber(0)">0</li>
-        <li class="teclado-item teclado-item_ponto" onclick="addNumber(`.`)">.</li>
-        <li class="teclado-item teclado-item_igual">=</li>
-    </ul>
 
 </body>
 

@@ -10,8 +10,13 @@ ul, ol, li {
 
 body {
     font-family: monospace;
-    display: table;
-    margin: 0 auto;
+}
+
+.calculadora {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-45%);
 }
 
 p,
@@ -35,13 +40,8 @@ p,
     height: 98%;
 }
 
-
 p {
     height: 80px;
-}
-
-.tela-texto {
-
 }
 
 .teclado {
@@ -69,12 +69,14 @@ p {
     cursor: pointer;
 }
 
-.teclado-item_0 {
-    width: 162px;
+.teclado-item_0,
+.teclado-item_back,
+.teclado-item_ponto {
+    position: relative;
+    top: -82px;
 }
 
 .teclado-item_igual {
     position: relative;
     height: 162px;
-    top: -82px;
 }
