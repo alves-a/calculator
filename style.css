@@ -12,32 +12,44 @@ body {
     font-family: monospace;
 }
 
+.background {
+    width: 100vw;
+    height: 100vh;
+    background: #0f0c29;
+    background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
+    background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
+}
+
 .calculadora {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translateX(-50%) translateY(-45%);
+    transform: translateX(-50%) translateY(-50%);
+
+    background-color: #262626;
+    height: 572px;
 }
 
-p,
-.tela,
-.teclado-item {
+p, .tela, .teclado-item {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .tela {
-    background-color: gray;
     width: 326px;
     height: 160px;
 }
 
 .tela-display {
-    background-color: green;
     border-radius: 5%;
     width: 98%;
     height: 98%;
+}
+
+.tela,
+.tela-display {
+    background-color: #7d7d7d;
 }
 
 p {
@@ -50,28 +62,33 @@ p {
     width: 328px;
 }
 
-.tela,
-.teclado-item {
-    border: solid 1px rebeccapurple;
+.tela, .teclado-item, .calculadora {
+    border: solid 1px #333333;
+    border-radius: 5px;
 }
 
 .teclado-item {
-    background-color: burlywood;
+    background-color: #bfbfbf;
     color: black;
     width: 80px;
     height: 80px;
-    font-size: 1.5em;
+    font-size: 2em;
+}
+
+.teclado-item_radic, .teclado-item_divisao, .teclado-item_multiplicacao, .teclado-item_c, .teclado-item_mais, .teclado-item_menos {
+    background-color: #a6a6a6;
 }
 
 .teclado-item:hover {
-    background-color: rgb(0, 0, 0);
-    color: rgb(255, 1, 1);
+    background-color: #a6a6a6;
     cursor: pointer;
 }
 
-.teclado-item_0,
-.teclado-item_back,
-.teclado-item_ponto {
+.teclado-item_radic:hover, .teclado-item_divisao:hover, .teclado-item_multiplicacao:hover, .teclado-item_c:hover, .teclado-item_mais:hover, .teclado-item_menos:hover {
+    background-color: #8c8c8c;
+}
+
+.teclado-item_0, .teclado-item_back, .teclado-item_ponto {
     position: relative;
     top: -82px;
 }
@@ -79,4 +96,9 @@ p {
 .teclado-item_igual {
     position: relative;
     height: 162px;
+    background-color: #7d7d7d;
+}
+
+.teclado-item_igual:hover {
+    background-color: #6d6d6d;
 }
