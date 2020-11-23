@@ -36,14 +36,14 @@ body {
     background-color: teal;
 }
 
-.key:hover {
-    cursor: pointer;
-    background-color: violet;
-}
 
 /* OPERACOES */
 .operations {
     display: flex;
+}
+
+.operations .key {
+    background-color: silver;
 }
 
 /* NUMEROS */
@@ -51,6 +51,10 @@ body {
     display: flex;
     flex-wrap: wrap;
     width: 180px;
+}
+
+.numbers .key {
+    background-color: sandybrown;
 }
 
 /* SINAIS */
@@ -61,4 +65,25 @@ body {
 
 .key-equal {
     height: 120px;
+}
+
+.signals .key {
+    background-color: seagreen;
+}
+
+.signals .key:last-child {
+    background-color: limegreen;
+}
+
+/* TECLAS ANIMACAO */
+.key:hover {
+    cursor: pointer;
+    background-color: violet;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    font-size: 10px;
+    margin-top: 50px;
 }
