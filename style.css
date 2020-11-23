@@ -8,7 +8,57 @@ body {
     background-color: tomato;
 }
 
+.calculator {
+    margin: 0 auto;
+    width: 240px;
+}
+
+.screen {
+    width: 240px;
+    height: 120px;
+    background-color: yellow;
+}
+
 .keyboard {
     display: flex;
     flex-wrap: wrap;
+}
+
+/* TECLAS */
+.key {
+    width: 60px;
+    height: 60px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: teal;
+}
+
+.key:hover {
+    cursor: pointer;
+    background-color: violet;
+}
+
+/* OPERACOES */
+.operations {
+    display: flex;
+}
+
+/* NUMEROS */
+.numbers {
+    display: flex;
+    flex-wrap: wrap;
+    width: 180px;
+}
+
+/* SINAIS */
+.signals {
+    display: flex;
+    flex-direction: column;
+}
+
+.key-equal {
+    height: 120px;
 }
